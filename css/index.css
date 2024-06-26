@@ -88,6 +88,10 @@ img{
     margin: 0 auto;
     padding-bottom: 7.6rem;
 }
+.down-btns {
+    display: flex;
+    align-items: center;
+}
 .down img{
     width: 100%;
 }
@@ -97,8 +101,12 @@ img{
 .top img{
     width: 100%;
 }
-@media (max-width: 550px) {
-    .content,.foot{
-        width: 100%;
+@media only screen and (max-width: 768px) {
+    .content, .foot {
+      width: 100%;
     }
-}
+
+    .content {
+        padding-bottom: 10.6rem;
+    }
+  }
