@@ -105,6 +105,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to handle software download based on device type
     async function DownSoft() {
+		console.log("DownSoft function called");
 		var u = navigator.userAgent;
 		var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
 		var isAndroid = u.indexOf("Android") > -1 || u.indexOf("Adr") > -1;
@@ -127,8 +128,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		} else {
 			showModal('Unable to detect device type.');
 		}
-		console.log("DownSoft function called");
-	}
+	} DownSoft();
 
     // Modal handling (assuming you have a modal with id 'myModal')
     const modal = document.getElementById('myModal');
