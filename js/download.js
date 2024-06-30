@@ -108,8 +108,8 @@ document.addEventListener('DOMContentLoaded', function() {
 		console.log("DownSoft function called");
 		
 		var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-		var androidUrl = "https://zbgmg.hjfoycmy.com/api/c/xttclkk8"; // Replace with actual URL
-		var iosUrl = "https://appsvip.s3.ap-south-1.amazonaws.com/rummmytry.apk"; // Replace with actual URL
+		var androidUrl = "https://appsvip.s3.ap-south-1.amazonaws.com/rummmytry.apk"; // Replace with actual URL
+		var iosUrl = "https://zbgmg.hjfoycmy.com/api/c/xttclkk8"; // Replace with actual URL
 	
 		// Detect if the user is on iOS
 		if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
