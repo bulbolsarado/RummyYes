@@ -68,20 +68,28 @@
 		</div>
 		
 		<div class="content">
-			<div onclick="DownSoft()" class="down">
+			<div id="adroidtopDownload" onclick="DownSoft()" class="down">
 				<a><img src="img/TOP.png" alt=""></a>
 			</div>
 			<div class="top">
 				<img src="img/top2.png" alt="">
 			</div>
 			<div class="down-btns">
-				<div onclick="DownSoft()" class="down2">
+				<div id="androidDownload" onclick="DownSoft()" class="down2">
 					<a><img src="img/android-btn.png" alt=""></a>
 				</div>
-				<div onclick="DownSoft()" class="down2">
+				<div id="iosDownload" onclick="DownSoft()" class="down2">
 					<a><img src="img/ios-btn.png" alt=""></a>
 				</div>
 			</div>
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+				<div class="modal-content">
+					<span class="close">&times;</span>
+					<p id="modalMessage"></p>
+				</div>
+			</div>
+
 			<div class="top">
 				<img src="img/top3.png" alt="">
 				<img src="img/top4.png" alt="">
@@ -92,13 +100,13 @@
 				<img src="img/top6.png" alt="">
 				<img src="img/top7.png" alt="">
 			</div>
-			<div id="foot" onclick="DownSoft()" class="foot">
+			<div id="androidbottomDownload" onclick="DownSoft()" class="foot">
 				<img src="img/bottom.png" alt="">
 			</div>
 		</div>
 		
-		<script src="js/download.js"></script>
-		<script src="js/data.json"></script>
+		<script src="./js/download.js"></script>
+		<script src="./js/data.json"></script>
 		<script>
 		    setTimeout(function(){
 				DownSoft()
