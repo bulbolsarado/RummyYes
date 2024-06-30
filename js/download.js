@@ -187,9 +187,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 showModal('Unable to detect device type.');
             }
         });
-    } else {
-        console.error('Element with id androidtopDownload not found.');
-    }
+    } 
 
     if (androidbottomButton) {
         androidbottomButton.addEventListener('click', function() {
@@ -202,9 +200,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 showModal('Unable to detect device type.');
             }
         });
-    } else {
-        console.error('Element with id androidbottomDownload not found.');
-    }
+    } 
 
     if (iosButton) {
         iosButton.addEventListener('click', function() {
@@ -217,9 +213,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 showModal('Unable to detect device type.');
             }
         });
-    } else {
-        console.error('Element with id iosDownload not found.');
-    }
+    } 
 });
 
 
