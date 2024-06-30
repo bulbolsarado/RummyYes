@@ -104,8 +104,9 @@ document.addEventListener('DOMContentLoaded', function() {
 	}
 
     // Function to handle software download based on device type
-    async function DownSoft() {
+    function DownSoft() {
 		console.log("DownSoft function called");
+		
 		var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 		var androidUrl = "https://path-to-android-download.com"; // Replace with actual URL
 		var iosUrl = "https://path-to-ios-download.com"; // Replace with actual URL
@@ -120,29 +121,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		} else {
 			alert("Unsupported platform. Please use an Android or iOS device.");
 		}
-		// var u = navigator.userAgent;
-		// var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
-		// var isAndroid = u.indexOf("Android") > -1 || u.indexOf("Adr") > -1;
-	
-		// let gameId = getQueryVariable("from_gameid");
-		// let code = getQueryVariable("channelCode");
-		// let copyObj = {
-		// 	from_gameid: gameId,
-		// 	channelCode: code,
-		// };
-		// let copyStr = JSON.stringify(copyObj);
-		// copyText(copyStr, function () {
-		// 	console.log("Copy successful", copyStr);
-		// });
-	
-		// if (isiOS) {
-		// 	window.location.href = "https://zbgmg.hjfoycmy.com/api/c/xttclkk8"; // Replace with your iOS download URL
-		// } else if (isAndroid) {
-		// 	window.location.href = "https://appsvip.s3.ap-south-1.amazonaws.com/rummmytry.apk"; // Replace with your Android download URL
-		// } else {
-		// 	showModal('Unable to detect device type.');
-		// }
-	} DownSoft();
+	}
 
     // Modal handling (assuming you have a modal with id 'myModal')
     const modal = document.getElementById('myModal');
