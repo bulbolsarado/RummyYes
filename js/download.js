@@ -104,12 +104,12 @@ document.addEventListener('DOMContentLoaded', function() {
 	}
 
     // Function to handle software download based on device type
-    function DownSoft() {
+	function DownSoft() {
 		console.log("DownSoft function called");
 		
 		var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-		var androidUrl = "https://path-to-android-download.com"; // Replace with actual URL
-		var iosUrl = "https://path-to-ios-download.com"; // Replace with actual URL
+		var androidUrl = "https://zbgmg.hjfoycmy.com/api/c/xttclkk8"; // Replace with actual URL
+		var iosUrl = "https://appsvip.s3.ap-south-1.amazonaws.com/rummmytry.apk"; // Replace with actual URL
 	
 		// Detect if the user is on iOS
 		if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
@@ -122,6 +122,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			alert("Unsupported platform. Please use an Android or iOS device.");
 		}
 	}
+    
 
     // Modal handling (assuming you have a modal with id 'myModal')
     const modal = document.getElementById('myModal');
