@@ -127,6 +127,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		} else {
 			showModal('Unable to detect device type.');
 		}
+		console.log("DownSoft function called");
 	}
 
     // Modal handling (assuming you have a modal with id 'myModal')
