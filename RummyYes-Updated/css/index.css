@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    height: 100%;
+}
+img{
+    display: block;
+}
+.down2{
+    text-align: center;
+    width: 100%;
+}
+.down2 a{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.down2 img{
+    width: 14rem;
+    animation: move 3s infinite;
+}
+.note{
+    color: #fff;
+    width: 100%;
+    padding:0 5%;
+    box-sizing: border-box;
+    font-size: .7rem;
+    text-align: left;
+}
+.note1,.note2{
+    width: 100%;
+    padding:0 5%;
+    color: #fff;
+    box-sizing: border-box;
+    font-size: .7rem;
+    text-align: left;
+    position: absolute;
+}
+.note1{
+    top: 10%;
+}
+.active{
+    color: #d5ba82;
+}
+.foot{
+    position: fixed;
+    width: 550px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.kf{
+    position: fixed;
+    right: 0;
+    top: 30%;
+    margin: auto;
+    z-index: 999;
+    width: 4rem;
+    height: 4rem;
+
+}
+.kf img{
+    width: 100%;
+}
+.foot img{
+    width: 100%;
+}
+@keyframes move {
+    0%{
+        transform: scale(.98) translate(0px, 2px);
+    }
+    50%{
+        transform: scale(1) translate(0px, 0px);
+    }
+    100%{
+        transform: scale(.98) translate(0px, 2px);
+
+    }
+}
+.content{
+    width: 550px;
+    min-height: 200px;
+    background:url("../img/bg.png")no-repeat 50% -61%/100% auto,#131313;
+    margin: 0 auto;
+    padding-bottom: 7.6rem;
+}
+.down-btns {
+    display: flex;
+    align-items: center;
+}
+.down img{
+    width: 100%;
+}
+.top{
+    position: relative;
+}
+.top img{
+    width: 100%;
+}
+@media only screen and (max-width: 768px) {
+    .content, .foot {
+      width: 100%;
+    }
+
+    .content {
+        padding-bottom: 10.6rem;
+    }
+  }

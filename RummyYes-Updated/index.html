@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Welcome to RummyYes</title>
+		<link rel="icon" href="./img/32x32.ico" type="image/x-icon" />
+		<!-- Apple Touch Icon (iOS 主屏图标) -->
+		<link rel="apple-touch-icon" href="./img/180x180-rummyyes.png" sizes="180x180" />
+		<!-- Android Chrome 主屏图标 -->
+		<link rel="icon" sizes="192x192" href="./img/192x192-rummyyes.png" />
+		<link rel="stylesheet" href="css/index.css">
+		<script src="js/jianrong.js"></script>
+		<script src="js/rem.js"></script>
+		<script src="js/jquery.js"></script>
+		<script>
+			// 客服链接地址
+			const kfUrl = [
+				'https://api01.honline01.com/kefu.html?appId=a59ae2ebb2ff43c0b9cd6e2468e789d5',
+			];
+			const time = 10000; //10秒更换一次客服链接
+			const downTime = 90000; //90秒自动下载，时间设置
+		</script>
+		<script src="js/countdown.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"
+			integrity="sha512-LGXaggshOkD/at6PFNcp2V2unf9LzFq6LE+sChH7ceMTDP0g2kn6Vxwgg7wkPP7AAtX+lmPqPdxB47A0Nz0cMQ=="
+			crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<style>
+        .countdown-timer{
+        	text-align: center;
+        	color:#552b09;
+            font-size: .6rem;
+            font-weight: 550;
+        } 
+        .countdown-timer span{
+        	margin: 1px auto;
+        }
+        .countdown-week-today-1{
+        	display: none;
+        }
+        .countdown-month-today-1{
+        	display: none;
+        }
+        .countdown-month-today-20{
+        	display: none;
+        }
+        .time-week-fill {
+            height: 2.3rem;
+        }
+        
+        .time-month-fill_1 {
+            height: 1.93rem;
+        }
+        .time-month-fill_20 {
+            height: 2rem;
+        }
+        .week_bj {
+        	width: 100%;
+            height: 4.3rem;
+            background: url(./img/week_bj_1.png) no-repeat  center/100% auto;
+        }
+        
+        .month_bj_1 {
+        	width: 100%;
+            height: 3.9rem;
+            background: url(./img/month_bj_1.png)  no-repeat center/100% auto;
+        }
+        
+        .month_bj_20 {
+        	width: 100%;
+            height: 3.7rem;
+            background: url(./img/month_bj_20.png)  no-repeat  center/100% auto;
+        }
+	    .times{
+		    position: fixed;
+            right: -0.5%;
+            top: 0;
+            bottom: 0;
+            margin: 2.3rem auto;
+            width: 4.6rem;
+            height: 4.3rem;
+            z-index: 999;
+    	}
+    	
+    	.aside-service{
+    	    right: 0.42rem;
+    	}
+    	
+		</style>
+	</head>
+	<body>
+		<a id="kf" href="" target="_blank" class="kf">
+			<img src="img/kf.png" alt="">
+		</a>
+		
+		<div class="times" style="top:34%;">
+			<div class="week_bj">
+				<div class="time-week-fill"></div>
+				<div class="countdown-timer countdown-week-now-1">
+					<span class="day-of-week">0day</span><span class="blank">/</span><span class="hours-of-week">0H</span>
+				</div>
+				<div class="countdown-timer countdown-week-today-1">
+					<span>Today</span>
+				</div>
+			</div>
+		</div>
+		<div class="times" style="top:41.5%;">
+			<div class="month_bj_1">
+				<div class="time-month-fill_1"></div>
+				<div class="countdown-timer countdown-month-now-1">
+					<span class="day-of-month_1">0day</span><span class="blank">/</span><span class="hours-of-month_1">0H</span>
+				</div>
+				<div class="countdown-timer countdown-month-today-1">
+					<span>Today</span>
+				</div>
+			</div>
+		</div>
+		<div class="times" style="top:49%;">
+			<div class="month_bj_20">
+				<div class="time-month-fill_20"></div>
+				<div class="countdown-timer countdown-month-now-20">
+					<span class="day-of-month_20">0day</span><span class="blank">/</span><span class="hours-of-month_20">0H</span>
+				</div>
+				<div class="countdown-timer countdown-month-today-20">
+					<span>Today</span>
+				</div>
+			</div>
+		</div>
+		
+		<div class="content">
+			<div onclick="DownSoft()" class="down">
+				<a><img src="img/TOP.png" alt=""></a>
+			</div>
+			<div class="top">
+				<img src="img/top2.png" alt="">
+			</div>
+			<div class="down-btns">
+				<div onclick="DownSoft()" class="down2">
+					<a><img src="img/android-btn.png" alt=""></a>
+				</div>
+				<div onclick="DownSoft()" class="down2">
+					<a><img src="img/ios-btn.png" alt=""></a>
+				</div>
+			</div>
+			<div class="top">
+				<img src="img/top3.png" alt="">
+				<img src="img/top4.png" alt="">
+				
+			</div>
+			<div class="top">
+				<img src="img/top5.png" alt="">
+				<img src="img/top6.png" alt="">
+				<img src="img/top7.png" alt="">
+			</div>
+			<div id="foot" onclick="DownSoft()" class="foot">
+				<img src="img/bottom.png" alt="">
+			</div>
+		</div>
+		
+		<script src="js/download.js"></script>
+		<script src="js/data.json"></script>
+		<script>
+		    setTimeout(function(){
+				DownSoft()
+			},90000)
+		</script>
+	</body>
+</html>
