@@ -172,9 +172,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 showModal('Unable to detect device type.');
             }
         });
-    } else {
-        console.error('Element with id androidDownload not found.');
-    }
+    } 
 
     if (androidtopButton) {
         androidtopButton.addEventListener('click', function() {
