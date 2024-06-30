@@ -104,3 +104,63 @@ body {
 	padding: 0;
 	margin: 0;
 }
+
+.countdown-timer{
+	text-align: center;
+	color:#552b09;
+	font-size: .6rem;
+	font-weight: 550;
+} 
+.countdown-timer span{
+	margin: 1px auto;
+}
+.countdown-week-today-1{
+	display: none;
+}
+.countdown-month-today-1{
+	display: none;
+}
+.countdown-month-today-20{
+	display: none;
+}
+.time-week-fill {
+	height: 2.3rem;
+}
+
+.time-month-fill_1 {
+	height: 1.93rem;
+}
+.time-month-fill_20 {
+	height: 2rem;
+}
+.week_bj {
+	width: 100%;
+	height: 4.3rem;
+	background: url(./img/week_bj_1.png) no-repeat  center/100% auto;
+}
+
+.month_bj_1 {
+	width: 100%;
+	height: 3.9rem;
+	background: url(./img/month_bj_1.png)  no-repeat center/100% auto;
+}
+
+.month_bj_20 {
+	width: 100%;
+	height: 3.7rem;
+	background: url(./img/month_bj_20.png)  no-repeat  center/100% auto;
+}
+.times{
+	position: fixed;
+	right: -0.5%;
+	top: 0;
+	bottom: 0;
+	margin: 2.3rem auto;
+	width: 4.6rem;
+	height: 4.3rem;
+	z-index: 999;
+}
+
+.aside-service{
+	right: 0.42rem;
+}
